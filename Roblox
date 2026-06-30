@@ -1,12 +1,946 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
+-- ==============================================
+-- VERITY ENHANCED | PART 1/4
+-- Services, Settings, Sound System & Core Helpers
+-- ==============================================
 
-]]--
+-- SERVICES
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local Workspace = game:GetService("Workspace")
+local Camera = Workspace.CurrentCamera
+local StarterGui = game:GetService("StarterGui")
+local UserInputService = game:GetService("UserInputService")
+local SoundService = game:GetService("SoundService")
 
-local v0=tonumber;local v1=string.byte;local v2=string.char;local v3=string.sub;local v4=string.gsub;local v5=string.rep;local v6=table.concat;local v7=table.insert;local v8=math.ldexp;local v9=getfenv or function() return _ENV;end ;local v10=setmetatable;local v11=pcall;local v12=select;local v13=unpack or table.unpack ;local v14=tonumber;local function v15(v16,v17,...) local v18=1;local v19;v16=v4(v3(v16,5),"..",function(v30) if (v1(v30,2)==81) then v19=v0(v3(v30,1,1));return "";else local v82=v2(v0(v30,16));if v19 then local v89=0;local v90;while true do if (v89==1) then return v90;end if (v89==0) then v90=v5(v82,v19);v19=nil;v89=1;end end else return v82;end end end);local function v20(v31,v32,v33) if v33 then local v83=0 -0 ;local v84;while true do if (v83==((1637 -(1523 + 114)) -0)) then v84=(v31/(2^(v32-(1 -0))))%((4 -2)^(((v33-(620 -(555 + 58 + 6))) -(v32-(932 -(857 + 74)))) + (569 -((523 -156) + 201)))) ;return v84-(v84%(928 -(214 + 713))) ;end end else local v85=2^(v32-(1 + 0)) ;return (((v31%(v85 + v85))>=v85) and (1 + (1065 -(68 + 997)))) or (877 -(282 + 595)) ;end end local function v21() local v34=v1(v16,v18,v18);v18=v18 + 1 ;return v34;end local function v22() local v35,v36=v1(v16,v18,v18 + 2 );v18=v18 + (1272 -(226 + 1044)) ;return (v36 * (1114 -858)) + v35 ;end local function v23() local v37,v38,v39,v40=v1(v16,v18,v18 + (120 -(32 + (157 -72))) );v18=v18 + (7 -3) + 0 ;return (v40 * (3720433 + 13056783)) + (v39 * (66493 -(892 + 65))) + (v38 * (610 -354)) + v37 ;end local function v24() local v41=350 -(87 + 263) ;local v42;local v43;local v44;local v45;local v46;local v47;while true do if (v41==(183 -(67 + 113))) then if (v46==(0 + 0)) then if (v45==(0 -0)) then return v47 * (0 + 0) ;else v46=3 -2 ;v44=952 -(802 + (265 -115)) ;end elseif (v46==2047) then return ((v45==0) and (v47 * ((2 -1)/(438 -(145 + 293))))) or (v47 * NaN) ;end return v8(v47,v46-(1855 -832) ) * (v44 + (v45/((2 + (430 -(44 + 386)))^(1049 -(915 + 82))))) ;end if (v41==(0 -0)) then v42=v23();v43=v23();v41=1 + 0 ;end if (v41==(1488 -(998 + 488))) then v46=v20(v43,27 -6 ,1218 -(340 + 729 + 118) );v47=((v20(v43,72 -40 )==(1 -0)) and  -(1 + 0)) or (1 -0) ;v41=3 + 0 + 0 ;end if (v41==(792 -(368 + 423))) then v44=3 -2 ;v45=(v20(v43,19 -(10 + 8) ,76 -56 ) * (((1216 -(201 + 571)) -(416 + 26))^(102 -70))) + v42 ;v41=1 + 1 ;end end end local function v25(v48) local v49;if  not v48 then v48=v23();if (v48==(1138 -(116 + 1022))) then return "";end end v49=v3(v16,v18,(v18 + v48) -(4 -3) );v18=v18 + v48 ;local v50={};for v65=1 + 0 , #v49 do v50[v65]=v2(v1(v3(v49,v65,v65)));end return v6(v50);end local v26=v23;local function v27(...) return {...},v12("#",...);end local function v28() local v51=(function() return 0;end)();local v52=(function() return;end)();local v53=(function() return;end)();local v54=(function() return;end)();local v55=(function() return;end)();local v56=(function() return;end)();local v57=(function() return;end)();local v58=(function() return;end)();while true do local v67=(function() return 0;end)();while true do if (v67~=(0 -0)) then else if ((7 -5)~=v51) then else v56[ #"19("]=(function() return v21();end)();for v98= #"~",v23() do local v99=(function() return v21();end)();if (v20(v99, #",", #"|")~=(0 + 0)) then else local v101=(function() return 0;end)();local v102=(function() return;end)();local v103=(function() return;end)();local v104=(function() return;end)();local v105=(function() return;end)();while true do if (v101==(653 -(494 + 157))) then while true do if (v102== #"91(") then if (v20(v104, #"gha", #"91(")== #"\\") then v105[ #"?id="]=(function() return v58[v105[ #"0313"]];end)();end v53[v98]=(function() return v105;end)();break;end if (v102==2) then local v183=(function() return 0 -0 ;end)();while true do if (v183~=(1 + 0)) then else v102=(function() return  #"asd";end)();break;end if ((0 + 0)==v183) then if (v20(v104, #"\\", #"\\")== #"!") then v105[1 + 1 ]=(function() return v58[v105[2]];end)();end if (v20(v104,2,2)~= #",") then else v105[ #"asd"]=(function() return v58[v105[ #"-19"]];end)();end v183=(function() return 1;end)();end end end if (v102~=(836 -(660 + 176))) then else local v184=(function() return 0;end)();local v185=(function() return;end)();while true do if (v184==(0 + 0)) then v185=(function() return 202 -(14 + 188) ;end)();while true do if (v185==0) then v103=(function() return v20(v99,677 -(534 + 141) , #"gha");end)();v104=(function() return v20(v99, #".dev",3 + 3 );end)();v185=(function() return 1;end)();end if (v185==(1 + 0)) then v102=(function() return  #"!";end)();break;end end break;end end end if (v102== #">") then local v186=(function() return 0;end)();local v187=(function() return;end)();while true do if (v186==0) then v187=(function() return 0 + 0 ;end)();while true do if (v187==0) then v105=(function() return {v22(),v22(),nil,nil};end)();if (v103==0) then local v394=(function() return 0;end)();while true do if (v394~=(0 -0)) then else v105[ #"xxx"]=(function() return v22();end)();v105[ #"asd1"]=(function() return v22();end)();break;end end elseif (v103== #"{") then v105[ #"xxx"]=(function() return v23();end)();elseif (v103==2) then v105[ #"xnx"]=(function() return v23() -(2^(44 -28)) ;end)();elseif (v103~= #"-19") then else local v407=(function() return 0 + 0 ;end)();local v408=(function() return;end)();while true do if (v407~=(0 + 0)) then else v408=(function() return 0;end)();while true do if (v408~=(396 -(115 + 281))) then else v105[ #"19("]=(function() return v23() -(2^16) ;end)();v105[ #"0836"]=(function() return v22();end)();break;end end break;end end end v187=(function() return 2 -1 ;end)();end if (v187~=1) then else v102=(function() return 2;end)();break;end end break;end end end end break;end if (v101==(1 + 0)) then v104=(function() return nil;end)();v105=(function() return nil;end)();v101=(function() return 2;end)();end if (v101~=0) then else local v115=(function() return 0 -0 ;end)();while true do if (v115~=(3 -2)) then else v101=(function() return 868 -(550 + 317) ;end)();break;end if ((0 -0)~=v115) then else v102=(function() return 0;end)();v103=(function() return nil;end)();v115=(function() return 1 -0 ;end)();end end end end end end for v100= #"}",v23() do v54,v100,v28=(function() return v52(v54,v100,v28);end)();end return v56;end if (v51~=(0 -0)) then else local v96=(function() return 0;end)();while true do if ((285 -(134 + 151))~=v96) then else v52=(function() return function(v110,v111,v112) local v113=(function() return 1665 -(970 + 695) ;end)();local v114=(function() return;end)();while true do if (0~=v113) then else v114=(function() return 0;end)();while true do if (v114~=(0 -0)) then else local v313=(function() return 1990 -(582 + 1408) ;end)();while true do if (v313~=0) then else v110[v111-#"[" ]=(function() return v112();end)();return v110,v111,v112;end end end end break;end end end;end)();v53=(function() return {};end)();v96=(function() return 1;end)();end if (v96~=1) then else v54=(function() return {};end)();v55=(function() return {};end)();v96=(function() return 2;end)();end if (v96==(6 -4)) then v51=(function() return 1;end)();break;end end end v67=(function() return 1 -0 ;end)();end if ((3 -2)==v67) then if (v51~=(1825 -(1195 + 629))) then else local v97=(function() return 0;end)();while true do if (v97~=(0 -0)) then else v56=(function() return {v53,v54,nil,v55};end)();v57=(function() return v23();end)();v97=(function() return 242 -(187 + 54) ;end)();end if (v97~=(781 -(162 + 618))) then else v58=(function() return {};end)();for v106= #"{",v57 do local v107=(function() return 0 + 0 ;end)();local v108=(function() return;end)();local v109=(function() return;end)();while true do if (v107~=1) then else if (v108== #"\\") then v109=(function() return v21()~=0 ;end)();elseif (v108==(2 + 0)) then v109=(function() return v24();end)();elseif (v108~= #"asd") then else v109=(function() return v25();end)();end v58[v106]=(function() return v109;end)();break;end if (v107~=(0 -0)) then else v108=(function() return v21();end)();v109=(function() return nil;end)();v107=(function() return 1 -0 ;end)();end end end v97=(function() return 2;end)();end if ((1 + 1)==v97) then v51=(function() return 1638 -(1373 + 263) ;end)();break;end end end break;end end end end local function v29(v59,v60,v61) local v62=v59[1001 -(147 + 304 + 549) ];local v63=v59[1 + 1 ];local v64=v59[3 + 0 ];return function(...) local v68=v62;local v69=v63;local v70=v64;local v71=v27;local v72=1 -0 ;local v73= -(1 -0);local v74={};local v75={...};local v76=v12("#",...) -(1 + 0) ;local v77={};local v78={};for v86=0,v76 do if ((3718>566) and (v86>=v70)) then v74[v86-v70 ]=v75[v86 + (1 -0) ];else v78[v86]=v75[v86 + (1912 -(340 + 1571)) ];end end local v79=(v76-v70) + (342 -(218 + 123)) ;local v80;local v81;while true do v80=v68[v72];v81=v80[1582 -(1535 + 46) ];if (v81<=(1816 -(1733 + 39))) then if (v81<=(21 + 0)) then if ((3921>=3009) and (v81<=(1044 -(125 + 623 + 286)))) then if ((2063>=1648) and (v81<=((1119 -(628 + 490)) + 3))) then if (v81<=(561 -(306 + 254))) then if (v81>(0 + 0)) then local v117=v80[3 -1 ];local v118,v119=v71(v78[v117](v78[v117 + (1468 -(899 + 568)) ]));v73=(v119 + v117) -(1 + 0) ;local v120=0;for v188=v117,v73 do v120=v120 + (2 -1) ;v78[v188]=v118[v120];end elseif  not v78[v80[605 -(49 + 219 + 335) ]] then v72=v72 + (291 -(60 + 230)) ;else v72=v80[575 -(426 + 146) ];end elseif (v81<=(1 + 1)) then local v121=v80[1 + 1 ];local v122=v78[v121];local v123=v78[v121 + (1458 -(282 + 1174)) ];if (v123>(0 + 0)) then if (v122>v78[v121 + (812 -(569 + 242)) ]) then v72=v80[8 -5 ];else v78[v121 + 1 + 2 ]=v122;end elseif (v122<v78[v121 + (1025 -(706 + 318)) ]) then v72=v80[1254 -(721 + 530) ];else v78[v121 + (527 -(303 + 221)) ]=v122;end elseif (v81>(1274 -(945 + 326))) then if (v78[v80[4 -2 ]]==v80[4 + 0 ]) then v72=v72 + (1163 -(171 + 991)) ;else v72=v80[703 -(271 + 429) ];end else local v215=v80[2 + 0 ];local v216,v217=v71(v78[v215](v13(v78,v215 + (1501 -(1408 + 92)) ,v73)));v73=(v217 + v215) -(1087 -(461 + 625)) ;local v218=1288 -((2458 -1465) + (1348 -1053)) ;for v314=v215,v73 do local v315=0 + 0 ;while true do if (((774 -(431 + 343)) -0)==v315) then v218=v218 + (1172 -(418 + (1520 -767))) ;v78[v314]=v216[v218];break;end end end end elseif (v81<=(3 + 4)) then if ((1066>=452) and (v81<=(8 -(8 -5)))) then v78[v80[1 + 1 ]]=v78[v80[1 + 2 ]] * v78[v80[1252 -(88 + 23 + 1137) ]] ;elseif ((4974>=2655) and (v81==(164 -(91 + 67)))) then local v219=v80[1 + 1 ];local v220={v78[v219](v78[v219 + (524 -(423 + 100)) ])};local v221=1769 -(1749 + 20) ;for v316=v219,v80[1 + 3 ] do v221=v221 + (1323 -(1249 + (88 -(6 + 9)))) ;v78[v316]=v220[v221];end else local v222=v80[1 + 1 ];v78[v222](v13(v78,v222 + (1146 -(466 + 679)) ,v73));end elseif ((v81<=(19 -11)) or (2721<=907)) then if ((4437>=3031) and v78[v80[5 -3 ]]) then v72=v72 + (1901 -(106 + 1794)) ;else v72=v80[1 + 2 ];end elseif (v81==(3 + 2 + 4)) then v78[v80[5 -3 ]]=v78[v80[7 -4 ]][v80[118 -(3 + 1 + 110) ]];else v78[v80[586 -(57 + 527) ]]=v78[v80[1430 -(41 + 1386) ]];end elseif ((v81<=(118 -((186 -(28 + 141)) + 86))) or (4470<2949)) then if (v81<=(4 + 5 + 3)) then if (v81>(24 -13)) then v78[v80[3 -1 ]]=v80[8 -5 ];else v78[v80[1814 -(1293 + 519) ]]=v61[v80[169 -(122 + 44) ]];end elseif ((v81<=(22 -(10 -1))) or (1580==2426)) then local v129=v69[v80[9 -6 ]];local v130;local v131={};v130=v10({},{__index=function(v191,v192) local v193=0 + 0 ;local v194;while true do if (v193==(0 + 0)) then v194=v131[v192];return v194[1 -0 ][v194[67 -(30 + 35) ]];end end end,__newindex=function(v195,v196,v197) local v198=v131[v196];v198[1 + 0 ][v198[1259 -(1043 + 214) ]]=v197;end});for v200=3 -2 ,v80[1216 -(323 + 889) ] do v72=v72 + 1 + 0 ;local v201=v68[v72];if ((v201[2 -1 ]==(52 -37)) or (3711==503)) then v131[v200-(581 -(361 + 219)) ]={v78,v201[416 -(15 + 398) ]};else v131[v200-1 ]={v60,v201[11 -8 ]};end v77[ #v77 + 1 + 0 ]=v131;end v78[v80[2 + 0 ]]=v29(v129,v130,v61);elseif (v81>(864 -(20 + 830))) then v78[v80[(3 -2) + (1264 -(668 + 595)) ]]=v78[v80[5 -2 ]];else v78[v80[3 -(1 + 0) ]][v78[v80[3 + 0 ]]]=v78[v80[(27 + 103) -(116 + 10) ]];end elseif (v81<=(53 -35)) then if (v81<=(2 + 14)) then v78[v80[740 -(542 + 196) ]]=v78[v80[6 -3 ]]%v78[v80[2 + (5 -3) ]] ;elseif (v81==(9 + 8)) then local v232=v80[7 -5 ];do return v13(v78,v232,v73);end else local v233=v80[1 + 1 ];local v234=v80[(300 -(23 + 267)) -6 ];local v235=v233 + (5 -3) ;local v236={v78[v233](v78[v233 + 1 + 0 ],v78[v235])};for v321=1552 -(1126 + 425) ,v234 do v78[v235 + v321 ]=v236[v321];end local v237=v236[406 -(118 + (2231 -(1129 + 815))) ];if v237 then local v347=0;while true do if ((v347==(0 -0)) or (420==4318)) then v78[v235]=v237;v72=v80[2 + 1 ];break;end end else v72=v72 + (1122 -(118 + 1003)) ;end end elseif ((v81<=(55 -(423 -(371 + 16)))) or (4158<=33)) then v72=v80[380 -(142 + 235) ];elseif ((v81==(90 -70)) or (99>4744)) then local v238=v80[1 + 1 ];v78[v238](v13(v78,v238 + (978 -(553 + 424)) ,v73));else local v239=0 -0 ;local v240;while true do if ((0 + 0)==v239) then v240=v80[2 + 0 ];do return v13(v78,v240,v240 + v80[2 + 1 ] );end break;end end end elseif (v81<=(14 + 18)) then if ((4341==4341) and (v81<=(15 + 11))) then if (v81<=(49 -26)) then if ((255<=1596) and (v81>(63 -41))) then for v203=v80[5 -(1753 -(1326 + 424)) ],v80[6 -3 ] do v78[v203]=nil;end else v78[v80[(1 -0) + 1 ]]=v78[v80[14 -11 ]][v78[v80[(10 -7) + 1 ]]];end elseif (v81<=(35 -11)) then local v137=v80[2];v78[v137]=v78[v137](v78[v137 + 1 + 0 ]);elseif (v81==(778 -(239 + 514))) then v78[v80[1 + 1 ]][v78[v80[1332 -(797 + 532) ]]]=v80[3 + 1 ];else v78[v80[1 + 1 ]]=v78[v80[2 + 1 ]] * v78[v80[9 -5 ]] ;end elseif (v81<=(1231 -((491 -(88 + 30)) + 829))) then if ((v81<=(758 -(476 + 255))) or (4433<1635)) then local v139=v80[1132 -(369 + (1532 -(720 + 51))) ];v78[v139]=v78[v139](v13(v78,v139 + (843 -(497 + 345)) ,v80[1 + 2 ]));elseif (v81==(17 + 11)) then local v244=0 -0 ;local v245;local v246;local v247;while true do if (v244==(0 -0)) then v245=v80[240 -(64 + 174) ];v246=v78[v245 + 1 + 1 ];v244=3 -2 ;end if (v244==(1 + 0)) then v247=v78[v245] + v246 ;v78[v245]=v247;v244=2 -0 ;end if (v244==2) then if ((v246>(336 -(144 + 192))) or (4300<3244)) then if (v247<=v78[v245 + (217 -(42 + (386 -212))) ]) then local v395=0 + 0 ;while true do if ((v395==(0 + 0)) or (3534>4677)) then v72=v80[2 + 1 ];v78[v245 + 3 ]=v247;break;end end end elseif (v247>=v78[v245 + (1505 -(363 + 1141)) ]) then local v396=1580 -(1183 + 397) ;while true do if (v396==(0 -0)) then v72=v80[3 + 0 ];v78[v245 + (1779 -(421 + 1355)) + 0 ]=v247;break;end end end break;end end else for v324=v80[2 + 0 ],v80[1978 -(1913 + 62) ] do v78[v324]=nil;end end elseif ((v81<=30) or (4859<2999)) then v78[v80[2 + 0 ]][v80[7 -4 ]]=v78[v80[1937 -(565 + 1368) ]];elseif ((4726>2407) and (v81==(83 -52))) then v78[v80[(10 -3) -(3 + 2) ]]=v78[v80[1664 -(1477 + 184) ]]%v78[v80[3 + 1 ]] ;elseif (v78[v80[2 -0 ]] or (1284>3669)) then v72=v72 + 1 + 0 ;else v72=v80[859 -(564 + 292) ];end elseif ((1117<2549) and (v81<=(65 -27))) then if (v81<=(117 -82)) then if (v81<=(99 -66)) then v78[v80[306 -(244 + 60) ]]=v61[v80[3 + 0 ]];elseif ((v81==(510 -(41 + 435))) or (2851>4774)) then local v249=v80[1003 -(938 + (1146 -(286 + 797))) ];v78[v249]=v78[v249](v13(v78,v249 + 1 + 0 ,v73));else v78[v80[1127 -(936 + (690 -501)) ]]=v80[1 + 2 ] + v78[v80[1617 -((2591 -1026) + 48) ]] ;end elseif (v81<=(29 + 7)) then local v145=(439 -(397 + 42)) -0 ;local v146;local v147;local v148;local v149;while true do if ((1031<3848) and (v145==(2 + 0))) then for v349=v146,v73 do v149=v149 + 1 ;v78[v349]=v147[v149];end break;end if ((1854>903) and (v145==(1138 -(782 + 112 + 244)))) then v146=v80[269 -(176 + 91) ];v147,v148=v71(v78[v146](v13(v78,v146 + (2 -1) ,v73)));v145=1;end if (v145==(1 -0)) then v73=(v148 + v146) -(1 -0) ;v149=1092 -(975 + 117) ;v145=(802 -(24 + 776)) + 0 ;end end elseif (v81>(1912 -(157 + 1718))) then v78[v80[(2 -0) + 0 ]]=v78[v80[10 -7 ]]%v80[13 -9 ] ;elseif (v78[v80[1020 -(697 + 321) ]]==v80[10 -6 ]) then v72=v72 + ((787 -(222 + 563)) -1) ;else v72=v80[5 -2 ];end elseif ((4663>1860) and (v81<=41)) then if (v81<=(89 -50)) then local v150=0 -(0 -0) ;local v151;local v152;local v153;while true do if ((v150==(0 + 0 + 0)) or (3053<=469)) then v151=v80[3 -1 ];v152=v78[v151 + (5 -3) ];v150=1228 -(322 + 905) ;end if ((v150==(612 -(602 + 9))) or (540>=1869)) then v153=v78[v151] + v152 ;v78[v151]=v153;v150=1191 -(449 + 740) ;end if ((3292==3292) and (v150==(874 -(826 + 46)))) then if (v152>(947 -((435 -(23 + 167)) + 702))) then if (v153<=v78[v151 + (3 -2) ]) then v72=v80[3];v78[v151 + 1 + 2 ]=v153;end elseif (v153>=v78[v151 + (1899 -(260 + 1638)) ]) then v72=v80[443 -(382 + 58) ];v78[v151 + ((1812 -(690 + 1108)) -11) ]=v153;end break;end end elseif (v81>(128 -88)) then local v253=0 + 0 ;local v254;local v255;while true do if ((1038<=2645) and (v253==(0 -0))) then v254=v80[5 -(1 + 1) ];v255=v78[v254];v253=2 -1 ;end if ((v253==(1206 -(902 + 303))) or (3230<2525)) then for v374=v254 + (1 -0) ,v80[(7 + 1) -4 ] do v255=v255   .. v78[v374] ;end v78[v80[1482 -(641 + 839) ]]=v255;break;end end elseif (v80[915 -(910 + 3) ]==v78[v80[9 -(853 -(40 + 808)) ]]) then v72=v72 + ((278 + 1407) -(1466 + 218)) ;else v72=v80[1 + 2 ];end elseif (v81<=(1732 -(1121 + 569))) then if (v80[216 -(22 + (734 -542)) ]==v78[v80[687 -(483 + 200) ]]) then v72=v72 + 1 ;else v72=v80[1466 -(1404 + 57 + 2) ];end elseif (v81>(117 -74)) then v78[v80[2 -0 ]]= #v78[v80[768 -(468 + 297) ]];else local v258=v80[564 -(177 + 157 + 228) ];do return v13(v78,v258,v73);end end elseif (v81<=(225 -(87 + 71))) then if (v81<=(127 -(643 -(47 + 524)))) then if ((v81<=(88 -39)) or (2400>4083)) then if ((v81<=(785 -(396 + 343))) or (2745>4359)) then if (v81>(13 + 21 + 11)) then local v154=v80[238 -(141 + (259 -164)) ];do return v78[v154](v13(v78,v154 + (1390 -(135 + 1254)) ,v80[3 + 0 ]));end else v78[v80[(5 -1) -2 ]][v80[2 + 1 ]]=v78[v80[9 -5 ]];end elseif (v81<=((27 -15) + 35)) then v78[v80[5 -(1729 -(1165 + 561)) ]]=v78[v80[3 + 0 ]]%v80[1 + 2 + 1 ] ;elseif (v81>(67 -19)) then v78[v80[2 -0 ]][v78[v80[2 + 1 ]]]=v78[v80[3 + 1 ]];else v61[v80[166 -(92 + 71) ]]=v78[v80[1861 -(821 + 1038) ]];end elseif (v81<=(26 + 26)) then if (v81<=(84 -34)) then local v158=v80[(2375 -1608) -(574 + 73 + 118) ];v78[v158](v78[v158 + 1 + 0 ]);elseif (v81>((606 -(341 + 138)) -76)) then local v263=0 + 0 ;local v264;while true do if ((172<=1810) and (v263==(849 -(254 + 595)))) then v264=v80[128 -(55 + 71) ];v78[v264]=v78[v264](v13(v78,v264 + (1 -0) ,v73));break;end end else v78[v80[1792 -(573 + 1217) ]]=v80[8 -5 ];end elseif ((v81<=(357 -(300 + 4))) or (492>=4959)) then do return;end elseif ((v81==(5 + 49)) or (756==2072)) then if (v78[v80[2 -0 ]]<v78[v80[943 -(193 + 521 + 225) ]]) then v72=v72 + 1 + 0 ;else v72=v80[8 -5 ];end else v78[v80[3 -1 ]]=v60[v80[(329 -(89 + 237)) -0 ]];end elseif ((1605<=4664) and (v81<=(7 + 54))) then if (v81<=(83 -25)) then if (v81<=(42 + 14)) then if  not v78[v80[808 -(118 + 688) ]] then v72=v72 + 1 + 0 ;else v72=v80[(164 -113) -(25 + 23) ];end elseif (v81==(12 + 45)) then local v270=v69[v80[(3976 -2087) -(927 + (1840 -(581 + 300))) ]];local v271;local v272={};v271=v10({},{__index=function(v330,v331) local v332=v272[v331];return v332[3 -2 ][v332[2]];end,__newindex=function(v333,v334,v335) local v336=v272[v334];v336[733 -(16 + 716) ][v336[3 -1 ]]=v335;end});for v338=1907 -(1665 + 241) ,v80[101 -(11 + 86) ] do local v339=717 -(373 + 344) ;local v340;while true do if (v339==(2 -1)) then if (v340[286 -((1395 -(855 + 365)) + (261 -151)) ]==(37 -22)) then v272[v338-(2 -1) ]={v78,v340[8 -5 ]};else v272[v338-(1 + 0) ]={v60,v340[1 + 2 ]};end v77[ #v77 + 1 + 0 ]=v272;break;end if ((1816==1816) and (v339==(1259 -(233 + 1026)))) then v72=v72 + 1 ;v340=v68[v72];v339=1667 -(636 + 1030) ;end end end v78[v80[2 + 0 + 0 ]]=v29(v270,v271,v61);else v78[v80[2 + 0 ]]=v78[v80[536 -(43 + 490) ]][v80[737 -(711 + 22) ]];end elseif (v81<=(228 -169)) then local v159=v80[862 -(240 + 619) ];local v160=v78[v159];for v205=v159 + 1 + 0 ,v80[5 -1 ] do v160=v160   .. v78[v205] ;end v78[v80[1 + 1 ]]=v160;elseif (v81==(1804 -(1344 + 400))) then v78[v80[407 -(255 + 150) ]][v78[v80[1371 -(34 + 1334) ]]]=v80[2 + 0 + 2 ];else v78[v80[2 + 0 ]]=v29(v69[v80[2 + 1 ]],nil,v61);end elseif (v81<=(273 -209)) then if (v81<=(200 -138)) then local v162=v80[1741 -(404 + 1335) ];local v163=v80[410 -(183 + 223) ];local v164=v162 + (2 -0) ;local v165={v78[v162](v78[v162 + 1 + 0 ],v78[v164])};for v206=969 -(478 + 490) ,v163 do v78[v164 + v206 ]=v165[v206];end local v166=v165[(624 -(156 + 130)) -(10 + 327) ];if v166 then v78[v164]=v166;v72=v80[3 + 0 ];else v72=v72 + ((769 -430) -(118 + (370 -150))) ;end elseif ((v81==(21 + 42)) or (621>3100)) then v61[v80[452 -(108 + (698 -357)) ]]=v78[v80[1 + 1 ]];else v78[v80[8 -6 ]]=v80[1496 -(711 + 782) ] + v78[v80[7 -3 ]] ;end elseif ((v81<=(534 -(270 + 199))) or (1157>=4225)) then local v167=v80[6 -4 ];local v168,v169=v71(v78[v167](v13(v78,v167 + 1 ,v80[1 + 1 + 1 ])));v73=(v169 + v167) -(1820 -(580 + 1239)) ;local v170=0 -0 ;for v209=v167,v73 do local v210=0 + 0 ;while true do if (v210==(0 + 0)) then v170=v170 + (3 -2) ;v78[v209]=v168[v170];break;end end end elseif (v81==(2 + 1 + 63)) then local v284=v80[2];local v285=v78[v284];local v286=v78[v284 + (70 -(10 + 59)) + 1 ];if (v286>(0 + 0)) then if (v285>v78[v284 + (2 -1) ]) then v72=v80[2 + (4 -3) ];else v78[v284 + (7 -4) ]=v285;end elseif ((v285<v78[v284 + (1168 -((1808 -(671 + 492)) + 522)) ]) or (4986==4138)) then v72=v80[(1428 + 365) -(1010 + 780) ];else v78[v284 + 3 + 0 ]=v285;end else v78[v80[9 -7 ]]= #v78[v80[8 -5 ]];end elseif (v81<=(1914 -(1045 + 791))) then if (v81<=(181 -(1324 -(369 + 846)))) then if ((v81<=(104 -35)) or (2033<=224)) then if (v81==(573 -(351 + 154))) then local v171=v80[(418 + 1158) -(1281 + 293) ];v78[v171]=v78[v171](v13(v78,v171 + (267 -(28 + 238)) ,v80[1 + 2 ]));else v78[v80[813 -(721 + 90) ]]=v60[v80[6 -3 ]];end elseif (v81<=(1629 -(1381 + 178))) then if ((v78[v80[2 + 0 ]]<v78[v80[5 -(1 + 0) ]]) or (1223==2011)) then v72=v72 + (1 -0) ;else v72=v80[3 + (1945 -(1036 + 909)) ];end elseif (v81==(31 + 40)) then v78[v80[6 -4 ]]=v80[3]~=(0 + 0 + 0) ;else local v290=v80[6 -4 ];v78[v290]=v78[v290](v78[v290 + ((790 -319) -(381 + 89)) ]);end elseif ((4827>4695) and (v81<=(67 + (211 -(11 + 192))))) then if (v81<=(50 + 23)) then v78[v80[2 -0 ]]=v80[1159 -(1074 + 82) ]~=(1534 -(709 + 825)) ;elseif ((3710>3065) and (v81==((82 + 79) -87))) then local v292=v80[1786 -((389 -(135 + 40)) + 1570) ];v78[v292](v78[v292 + (1456 -(990 + 465)) ]);else local v293=0 + 0 ;local v294;local v295;local v296;local v297;while true do if (((0 -0) -0)==v293) then v294=v80[1 + 1 ];v295,v296=v71(v78[v294](v13(v78,v294 + 1 + 0 ,v80[11 -8 ])));v293=3 -2 ;end if (v293==(1 + 0 + 0)) then v73=(v296 + v294) -(1727 -((3674 -2006) + (86 -28))) ;v297=0 + 0 ;v293=628 -(512 + 114) ;end if (v293==(1488 -(35 + 1451))) then for v381=v294,v73 do v297=v297 + (2 -1) ;v78[v381]=v295[v297];end break;end end end elseif (v81<=(156 -80)) then v78[v80[6 -4 ]]=v80[2 + 1 ]~=(0 -0) ;v72=v72 + 1 + 0 ;elseif ((2135<=2696) and (v81==(67 + 10))) then v78[v80[6 -4 ]]={};else local v299=(473 -(50 + 126)) -(45 + 252) ;local v300;while true do if ((0 + 0)==v299) then v300=v80[1996 -(109 + 1885) ];do return v78[v300](v13(v78,v300 + (1470 -(1269 + (556 -356))) ,v80[5 -(1 + 1) ]));end break;end end end elseif (v81<=(899 -((1511 -(1233 + 180)) + 717))) then if (v81<=(514 -(114 + 319))) then if (v81<=(112 -33)) then v78[v80[2 -0 ]]=v80[829 -(802 + 24) ]~=(0 -0) ;v72=v72 + 1 ;elseif ((v81>(101 -21)) or (1742>4397)) then do return v78[v80[1 + 1 ]];end else v78[v80[2 + 0 ]]={};end elseif (v81<=(14 + 68)) then local v178=v80[1 + 1 ];local v179={v78[v178](v78[v178 + (3 -2) ])};local v180=0 + (969 -(522 + 447)) ;for v211=v178,v80[4] do v180=v180 + 1 ;v78[v211]=v179[v180];end elseif ((3900>=1904) and (v81>(34 + 49))) then v78[v80[2 + 0 ]]=v78[v80[3 + 0 ]] + v80[2 + 2 ] ;else local v303=1433 -(797 + 636) ;local v304;local v305;local v306;local v307;while true do if ((v303==(1 + (1421 -(107 + 1314)))) or (1724==909)) then v73=(v306 + v304) -((2 + 2) -3) ;v307=1619 -(1427 + 192) ;v303=(2 -1) + 1 ;end if (v303==(4 -2)) then for v384=v304,v73 do local v385=0 + 0 ;while true do if (v385==(0 + 0 + 0)) then v307=v307 + ((648 -321) -(192 + 134)) ;v78[v384]=v305[v307];break;end end end break;end if (v303==(1276 -(316 + 960))) then v304=v80[5 -3 ];v305,v306=v71(v78[v304](v78[v304 + 1 + 0 ]));v303=1 + 0 ;end end end elseif (v81<=(81 + 6)) then if (v81<=(324 -239)) then do return v78[v80[1 + 1 ]];end elseif (v81>(637 -((328 -245) + 468))) then do return;end else v78[v80[4 -(1912 -(716 + 1194)) ]]=v78[v80[954 -(783 + 168) ]][v78[v80[1810 -(1202 + 604) ]]];end elseif (v81<=88) then v72=v80[9 -(1 + 5) ];elseif (v81>89) then v78[v80[2]]=v78[v80[13 -10 ]] + v80[315 -(309 + 2) ] ;else v78[v80[2 -0 ]]=v29(v69[v80[8 -5 ]],nil,v61);end v72=v72 + ((35 + 291) -(45 + 280)) ;end end;end return v29(v28(),{},v17)(...);end return v15("LOL!293Q0003063Q00737472696E6703043Q006368617203043Q00627974652Q033Q0073756203053Q0062697433322Q033Q0062697403043Q0062786F7203053Q007461626C6503063Q00636F6E63617403063Q00696E73657274026Q001C4003043Q00D346651103063Q007EA7341074D9026Q00184003163Q002F19AE6B1319F9240510AC380417AD2E4714BC38134903043Q004B6776D9026Q001440030D3Q00BBE23B50FDE78DFF2753FCFDCB03063Q00C7EB90523D98026Q00104003153Q00A5E02FDD1D913CC189EC38CA0CA120D3BEEC24CE0B03083Q00A7D6894AAB78CE53026Q00F03F03343Q002FC25771757EFDE04CF56D666C7EFDE01FF31E65777BFFA70FC153622Q72E7E200D71E7A7773F6A718C657613E64E7F505C0593303083Q00876CAE3E121E1793028Q0003193Q003F1CBDCC515E2D241BFBCD4A586C3311B5DD4B49253F10A89803073Q004C507EDBB9223D026Q00084003053Q007072696E7403153Q0073696576655F6F665F657261746F737468656E657303023Q005F47025Q00407A4003053Q007061697273024Q00F0E4FD40026Q003440025Q00C05940027Q0040023Q00406E9B5E41025Q005D3241024Q0087C63241009D4Q00507Q00120B000100013Q00203A00010001000200120B000200013Q00203A00020002000300120B000300013Q00203A00030003000400120B000400053Q0006380004000B000100010004133Q000B000100120B000400063Q00203A00050004000700120B000600083Q00203A00060006000900120B000700083Q00203A00070007000A00063900083Q000100062Q000F3Q00074Q000F3Q00014Q000F3Q00054Q000F3Q00024Q000F3Q00034Q000F3Q00064Q000A000900083Q001233000A000C3Q001233000B000D4Q00440009000B000200101E3Q000B00092Q000A000900083Q001233000A000F3Q001233000B00104Q00440009000B000200101E3Q000E00092Q000A000900083Q001233000A00123Q001233000B00134Q00440009000B000200101E3Q001100092Q000A000900083Q001233000A00153Q001233000B00164Q00440009000B000200101E3Q001400092Q000A000900083Q001233000A00183Q001233000B00194Q00440009000B000200101E3Q001700092Q000A000900083Q001233000A001B3Q001233000B001C4Q00440009000B000200101E3Q001A00090012330009001A4Q0017000A000D3Q0026040009004B0001001D0004133Q004B0001001233000E001A3Q002604000E00460001001A0004133Q00460001001023000F0017000D000646000C00420001000F0004133Q0042000100120B000F001E3Q00203A00103Q001A2Q0032000F0002000100120B000F001E3Q00203A00103Q00172Q0032000F00020001001233000E00173Q002604000E003A000100170004133Q003A0001001233000900143Q0004133Q004B00010004133Q003A00010026040009006F000100140004133Q006F0001001233000E001A4Q0017000F000F3Q002604000E005A0001001A0004133Q005A000100023D001000013Q00123F0010001F3Q00120B001000203Q00203A00113Q00142Q0056001000100011001233001100214Q00180010000200022Q000A000F00103Q001233000E00173Q002604000E004F000100170004133Q004F000100120B001000224Q000A0011000F4Q00520010000200120004133Q006700010006200014006700013Q0004133Q0067000100120B0015001E3Q00203A00163Q00112Q000A001700134Q003B0016001600172Q003200150002000100063E00100060000100020004133Q006000010004133Q006B00010004133Q004F000100120B000E001E3Q00203A000F3Q000E2Q0032000E000200010004133Q009C00010026040009007D0001001A0004133Q007D0001001233000E001A3Q002604000E00780001001A0004133Q00780001001233000A00233Q00205A000F000A002400205A000A000F0025001233000E00173Q002604000E0072000100170004133Q00720001001233000900173Q0004133Q007D00010004133Q007200010026040009008E000100260004133Q008E0001001233000E001A3Q000E28001700840001000E0004133Q008400010012330009001D3Q0004133Q008E0001002604000E00800001001A0004133Q00800001001233000D00273Q000646000B008C0001000C0004133Q008C000100120B000F001E3Q00203A00103Q000B2Q0032000F00020001001233000E00173Q0004133Q0080000100260400090037000100170004133Q00370001001233000E001A3Q002604000E00960001001A0004133Q00960001001233000B00283Q001233000C00293Q001233000E00173Q002604000E0091000100170004133Q00910001001233000900263Q0004133Q003700010004133Q009100010004133Q003700012Q00573Q00013Q00023Q00023Q00026Q00F03F026Q00704002264Q005000025Q001233000300014Q002C00045Q001233000500013Q0004420003002100012Q004500076Q000A000800024Q0045000900014Q0045000A00024Q0045000B00034Q0045000C00044Q000A000D6Q000A000E00063Q00205A000F000600012Q004B000C000F4Q0022000B3Q00022Q0045000C00034Q0045000D00044Q000A000E00014Q002C000F00014Q001F000F0006000F001023000F0001000F2Q002C001000014Q001F00100006001000102300100001001000205A0010001000012Q004B000D00104Q0003000C6Q0022000A3Q000200202F000A000A00022Q00010009000A4Q001400073Q000100041C0003000500012Q0045000300054Q000A000400024Q004E000300044Q002B00036Q00573Q00017Q00073Q00028Q00026Q00F03F027Q004003043Q006D61746803053Q00666C2Q6F7203043Q0073717274010001333Q001233000100014Q0017000200023Q001233000300013Q00260400030003000100010004133Q00030001000E2800010014000100010004133Q001400012Q005000046Q000A000200043Q001233000400024Q000A00055Q001233000600023Q000442000400130001000E2800020010000100070004133Q001000012Q004F00086Q0049000800014Q003100020007000800041C0004000D0001001233000100023Q00260400010002000100020004133Q00020001001233000400013Q00260400040017000100010004133Q00170001001233000500033Q00120B000600043Q00203A00060006000500120B000700043Q00203A0007000700062Q000A00086Q0001000700084Q002200063Q0002001233000700023Q0004420005002D00012Q00560009000200080006200009002C00013Q0004133Q002C00012Q001A0009000800082Q000A000A6Q000A000B00083Q0004420009002C00010020190002000C000700041C0009002A000100041C0005002300012Q0051000200023Q0004133Q001700010004133Q000200010004133Q000300010004133Q000200012Q00573Q00017Q00",v9(),...);
+-- LOCAL PLAYER
+local LocalPlayer = Players.LocalPlayer
+local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+local Humanoid = Character:WaitForChild("Humanoid")
+local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
+
+-- SOUND ALERT SYSTEM
+local AlertIDs = {135358870543373, 81926429168665, 106947264194855}
+local LastAlertTime = 0
+local AlertCooldown = 2.5
+
+local function PlayRandomAlert()
+    if os.clock() - LastAlertTime < AlertCooldown then return end
+    LastAlertTime = os.clock()
+    local sound = Instance.new("Sound", SoundService)
+    sound.SoundId = "rbxassetid://" .. AlertIDs[math.random(#AlertIDs)]
+    sound.Volume = 0.8
+    sound.PlaybackSpeed = 1
+    sound.PlayOnRemove = true
+    sound:Destroy()
+end
+
+-- UPDATED SETTINGS
+local LogoID = "rbxassetid://104477447896082"
+local DiscordLink = "https://discord.gg/TE2kKzJYEg"
+local Settings = {
+    AimlockEnabled = false,
+    AimSpeed = 1.0,
+    WallCheck = true,
+    MaxDistance = 1200,
+    UnlockWhenMyHPBelow = 11,
+    MinEnemyHPToLock = 15,
+    ESPEnabled = true,
+    TracerEnabled = true,
+    Enemies = {},
+    Team = {},
+    AimOffset = 0.15,
+    Prediction = 0.08,
+    PartSwitchInterval = 0.8,
+    VelocityThreshold = 1.5,
+    DirectionChangeThreshold = 0.3,
+    TeamWarningEnabled = true,
+    TeamHPDropThreshold = 10
+}
+
+-- STORAGE & TRACKERS
+local ESPStorage = {}
+local ListButtons = {}
+local ListFrame = nil
+local CurrentTargetChar = nil
+local CurrentAimPart = nil
+local LastPartSwitch = 0
+local LastVelocity = Vector3.new(0,0,0)
+local LastDirection = Vector3.new(0,0,0)
+local LastTeamHP = {}
+
+-- NOTIFY SYSTEM
+local function Notify(msg, dur)
+    dur = dur or 3
+    pcall(function()
+        StarterGui:SetCore("SendNotification", {Title = "Verity System", Text = msg, Duration = dur})
+    end)
+end
+
+-- SMART PLAYER SEARCH
+local function SmartFindPlayer(input)
+    input = input:lower():gsub("%s", "")
+    if input == "" then return nil end
+    local bestMatch = nil
+    local bestScore = math.huge
+    for _, plr in ipairs(Players:GetPlayers()) do
+        if plr == LocalPlayer then continue end
+        local userName = plr.Name:lower()
+        local displayName = plr.DisplayName:lower()
+        if userName == input or displayName == input then return plr end
+        local score = 0
+        if userName:find(input, 1, true) then score -= 20 end
+        if displayName:find(input, 1, true) then score -= 20 end
+        score += math.abs(#userName - #input) + math.abs(#displayName - #input)
+        if score < bestScore then bestScore = score; bestMatch = plr end
+    end
+    return bestMatch
+end
+
+-- ADD / REMOVE FUNCTIONS
+local function AddEnemy(plr)
+    if not plr or table.find(Settings.Enemies, plr) or table.find(Settings.Team, plr) then return end
+    table.insert(Settings.Enemies, plr)
+    Notify("Added as Enemy: "..plr.DisplayName)
+    UpdateListUI()
+end
+
+local function RemoveEnemy(plr)
+    for i = #Settings.Enemies, 1, -1 do
+        if Settings.Enemies[i] == plr then
+            table.remove(Settings.Enemies, i)
+            if ESPStorage[plr] then for _,v in pairs(ESPStorage[plr]) do v:Remove() end ESPStorage[plr] = nil end
+            Notify("Removed Enemy: "..plr.Name)
+            UpdateListUI(); break
+        end
+    end
+end
+
+local function AddTeam(plr)
+    if not plr or table.find(Settings.Team, plr) or table.find(Settings.Enemies, plr) then return end
+    table.insert(Settings.Team, plr)
+    LastTeamHP[plr] = nil
+    Notify("Added to Team: "..plr.DisplayName)
+    UpdateListUI()
+end
+
+local function RemoveTeam(plr)
+    for i = #Settings.Team, 1, -1 do
+        if Settings.Team[i] == plr then
+            table.remove(Settings.Team, i)
+            if ESPStorage[plr] then for _,v in pairs(ESPStorage[plr]) do v:Remove() end ESPStorage[plr] = nil end
+            LastTeamHP[plr] = nil
+            Notify("Removed from Team: "..plr.Name)
+            UpdateListUI(); break
+        end
+    end
+end
+
+local function AddAllEnemies()
+    local added = 0
+    for _,p in ipairs(Players:GetPlayers()) do
+        if p ~= LocalPlayer and not table.find(Settings.Enemies,p) and not table.find(Settings.Team,p) then
+            table.insert(Settings.Enemies,p); added +=1
+        end
+    end
+    Notify("Added "..added.." players as Enemies")
+    UpdateListUI()
+end
+-- ==============================================
+-- VERITY ENHANCED | PART 2/4
+-- Visibility, Aim Logic, ESP Setup & Update
+-- ==============================================
+
+-- VISIBILITY CHECKS
+local function IsOnScreen(part)
+    if not part or not part:IsDescendantOf(Workspace) then return false end
+    local pos, visible = Camera:WorldToViewportPoint(part.Position)
+    return visible and pos.Z > 1 and pos.Z < Settings.MaxDistance
+end
+
+local function IsVisible(part)
+    if not Settings.WallCheck or not part then return true end
+    local ray = RaycastParams.new()
+    ray.FilterDescendantsInstances = {Character, Camera}
+    ray.FilterType = Enum.RaycastFilterType.Exclude
+    ray.IgnoreWater = true
+    local result = Workspace:Raycast(Camera.CFrame.Position, part.Position - Camera.CFrame.Position, ray)
+    return not result or result.Instance:IsDescendantOf(part.Parent)
+end
+
+-- BODY PART SELECTOR
+local function GetRandomBodyPart(char)
+    local parts = {
+        char:FindFirstChild("Head"),
+        char:FindFirstChild("UpperTorso"),
+        char:FindFirstChild("LowerTorso"),
+        char:FindFirstChild("RightUpperArm"),
+        char:FindFirstChild("LeftUpperArm"),
+        char:FindFirstChild("RightUpperLeg"),
+        char:FindFirstChild("LeftUpperLeg")
+    }
+    local valid = {}
+    for _,p in ipairs(parts) do if p and p:IsDescendantOf(Workspace) then table.insert(valid, p) end end
+    return valid[math.random(#valid)]
+end
+
+-- PART SWITCH LOGIC
+local function ShouldSwitchPart(hrp)
+    if not hrp then return false end
+    local currentVel = hrp.Velocity
+    local speed = currentVel.Magnitude
+
+    if speed < Settings.VelocityThreshold then
+        LastVelocity = currentVel
+        LastDirection = currentVel.Unit
+        return false
+    end
+
+    local directionDelta = math.acos(math.clamp(LastDirection:Dot(currentVel.Unit), -1, 1))
+    local enoughTimePassed = (os.clock() - LastPartSwitch) > Settings.PartSwitchInterval
+
+    if enoughTimePassed and (math.abs(speed - LastVelocity.Magnitude) > 0.5 or directionDelta > Settings.DirectionChangeThreshold) then
+        LastVelocity = currentVel
+        LastDirection = currentVel.Unit
+        return true
+    end
+
+    return false
+end
+
+-- TARGET LOGIC
+local function GetBestTarget()
+    if not Humanoid or Humanoid.Health < Settings.UnlockWhenMyHPBelow then
+        CurrentTargetChar = nil; CurrentAimPart = nil; return nil
+    end
+    if not Settings.AimlockEnabled or #Settings.Enemies == 0 then
+        CurrentTargetChar = nil; CurrentAimPart = nil; return nil
+    end
+
+    if CurrentTargetChar and CurrentTargetChar:IsDescendantOf(Workspace) then
+        local hum = CurrentTargetChar:FindFirstChildOfClass("Humanoid")
+        local hrp = CurrentTargetChar:FindFirstChild("HumanoidRootPart")
+        if hum and hrp and hum.Health >= Settings.MinEnemyHPToLock and hum.Health > 0
+        and IsOnScreen(CurrentTargetChar.Head) and IsVisible(CurrentTargetChar.Head) then
+            if ShouldSwitchPart(hrp) then
+                CurrentAimPart = GetRandomBodyPart(CurrentTargetChar)
+                LastPartSwitch = os.clock()
+            end
+            return CurrentTargetChar
+        end
+        CurrentTargetChar = nil; CurrentAimPart = nil
+    end
+
+    local bestChar = nil; local bestDist = math.huge
+    for _,enemy in ipairs(Settings.Enemies) do
+        if not enemy or not enemy.Character then continue end
+        local hum = enemy.Character:FindFirstChildOfClass("Humanoid")
+        local head = enemy.Character:FindFirstChild("Head")
+        if not hum or not head or hum.Health < Settings.MinEnemyHPToLock or hum.Health <= 0 then continue end
+        if not IsOnScreen(head) or not IsVisible(head) then continue end
+
+        local dist = (Camera.CFrame.Position - head.Position).Magnitude
+        if dist < bestDist then bestDist = dist; bestChar = enemy.Character end
+    end
+
+    if bestChar then
+        CurrentTargetChar = bestChar
+        CurrentAimPart = GetRandomBodyPart(bestChar)
+        LastPartSwitch = os.clock()
+        LastVelocity = bestChar:FindFirstChild("HumanoidRootPart").Velocity
+        LastDirection = LastVelocity.Unit
+    else
+        CurrentTargetChar = nil; CurrentAimPart = nil
+    end
+
+    return CurrentTargetChar
+end
+
+-- AIM POSITION
+local function GetAimPos(part)
+    if not part then return nil end
+    local hrp = part.Parent:FindFirstChild("HumanoidRootPart")
+    local predicted = part.Position
+    if hrp then predicted += hrp.Velocity * Settings.Prediction end
+    return predicted + Vector3.new(0, Settings.AimOffset, 0)
+end
+
+-- ESP SETUP
+local function SetupESP(plr)
+    if ESPStorage[plr] then return end
+    ESPStorage[plr] = {
+        Tracer = Drawing.new("Line"),
+        HealthBar = Drawing.new("Square"),
+        Info = Drawing.new("Text")
+    }
+    local d = ESPStorage[plr]
+    d.Tracer.Thickness = 1.5
+    d.Tracer.Color = Color3.new(1,1,1)
+    d.HealthBar.Thickness = 2
+    d.HealthBar.Filled = true
+    d.HealthBar.Color = Color3.new(1,1,1)
+    d.Info.Size = 12
+    d.Info.Outline = true
+    d.Info.Center = true
+    d.Info.Color = Color3.new(1,1,1)
+end
+
+-- UPDATE ESP + SOUND ALERTS
+local function UpdateESP()
+    if not Settings.ESPEnabled then
+        for _,d in pairs(ESPStorage) do
+            d.Tracer.Visible = false; d.HealthBar.Visible = false; d.Info.Visible = false
+        end
+        return
+    end
+    local center = Vector2.new(Camera.ViewportSize.X/2, Camera.ViewportSize.Y/2)
+    local enemyTargetingTeam = false
+
+    -- TEAM ESP + HP DROP ALERT
+    for _,plr in ipairs(Settings.Team) do
+        if not plr or not plr:IsDescendantOf(Players) then continue end
+        if not plr.Character then
+            if ESPStorage[plr] then
+                ESPStorage[plr].Tracer.Visible = false
+                ESPStorage[plr].HealthBar.Visible = false
+                ESPStorage[plr].Info.Visible = false
+            end
+            continue
+        end
+        local hum = plr.Character:FindFirstChildOfClass("Humanoid")
+        local hrp = plr.Character:FindFirstChild("HumanoidRootPart")
+        if not hum or not hrp or hum.Health <= 0 then
+            if ESPStorage[plr] then
+                ESPStorage[plr].Tracer.Visible = false
+                ESPStorage[plr].HealthBar.Visible = false
+                ESPStorage[plr].Info.Visible = false
+            end
+            continue
+        end
+
+        -- HP Drop Check + Sound
+        if Settings.TeamWarningEnabled then
+            local currentHP = math.floor(hum.Health)
+            if LastTeamHP[plr] and (LastTeamHP[plr] - currentHP) >= Settings.TeamHPDropThreshold then
+                Notify(plr.DisplayName.." under attack | "..currentHP.." HP", 4)
+                PlayRandomAlert()
+            end
+            LastTeamHP[plr] = currentHP
+        end
+
+        SetupESP(plr)
+        local d = ESPStorage[plr]
+        local pos, onScr = Camera:WorldToViewportPoint(hrp.Position)
+        local dist = math.floor((Camera.CFrame.Position - hrp.Position).Magnitude)
+        if onScr and pos.Z > 0 and pos.Z < Settings.MaxDistance then
+            d.Tracer.Visible = Settings.TracerEnabled
+            d.Tracer.Color = Color3.new(0.2, 0.8, 0.2)
+            d.HealthBar.Visible = true
+            d.HealthBar.Color = Color3.new(0.2, 0.8, 0.2)
+            d.Info.Visible = true
+            d.Tracer.From = center; d.Tracer.To = Vector2.new(pos.X, pos.Y)
+            d.HealthBar.Position = Vector2.new(pos.X - 22, pos.Y - 25)
+            d.HealthBar.Size = Vector2.new(3, 25 * math.clamp(hum.Health/hum.MaxHealth, 0,1))
+            d.Info.Position = Vector2.new(pos.X, pos.Y - 45)
+            d.Info.Text = string.format("%s | %d m | %d HP", plr.DisplayName, dist, math.floor(hum.Health))
+        else
+            d.Tracer.Visible = false; d.HealthBar.Visible = false; d.Info.Visible = false
+        end
+    end
+
+    -- ENEMY ESP + TARGET CHECK
+    for _,plr in ipairs(Settings.Enemies) do
+        if not plr or not plr:IsDescendantOf(Players) then continue end
+        if not plr.Character then
+            if ESPStorage[plr] then
+                ESPStorage[plr].Tracer.Visible = false
+                ESPStorage[plr].HealthBar.Visible = false
+                ESPStorage[plr].Info.Visible = false
+            end
+            continue
+        end
+        local hum = plr.Character:FindFirstChildOfClass("Humanoid")
+        local hrp = plr.Character:FindFirstChild("HumanoidRootPart")
+        if not hum or not hrp or hum.Health <= 0 then
+            if ESPStorage[plr] then
+                ESPStorage[plr].Tracer.Visible = false
+                ESPStorage[plr].HealthBar.Visible = false
+                ESPStorage[plr].Info.Visible = false
+            end
+            continue
+        end
+
+        -- Check if enemy is targeting team
+        if Settings.TeamWarningEnabled and CurrentTargetChar then
+            local targetPlr = Players:GetPlayerFromCharacter(CurrentTargetChar)
+            if targetPlr and table.find(Settings.Team, targetPlr) then
+                enemyTargetingTeam = true
+            end
+        end
+
+        SetupESP(plr)
+        local d = ESPStorage[plr]
+        local pos, onScr = Camera:WorldToViewportPoint(hrp.Position)
+        local dist = math.floor((Camera.CFrame.Position - hrp.Position).Magnitude)
+        if onScr and pos.Z > 0 and pos.Z < Settings.MaxDistance then
+            d.Tracer.Visible = Settings.TracerEnabled
+            d.Tracer.Color = Color3.new(0.8, 0.2, 0.2)
+            d.HealthBar.Visible = true
+            d.HealthBar.Color = Color3.new(0.8, 0.2, 0.2)
+            d.Info.Visible = true
+            d.Tracer.From = center; d.Tracer.To = Vector2.new(pos.X, pos.Y)
+            d.HealthBar.Position = Vector2.new(pos.X - 22, pos.Y - 25)
+            d.HealthBar.Size = Vector2.new(3, 25 * math.clamp(hum.Health/hum.MaxHealth, 0,1))
+            d.Info.Position = Vector2.new(pos.X, pos.Y - 45)
+            d.Info.Text = string.format("%s | %d m | %d HP", plr.DisplayName, dist, math.floor(hum.Health))
+        else
+            d.Tracer.Visible = false; d.HealthBar.Visible = false; d.Info.Visible = false
+        end
+    end
+
+    -- Alert if enemy targets team
+    if enemyTargetingTeam and Settings.TeamWarningEnabled then
+        Notify("Enemy targeting your team!", 2)
+        PlayRandomAlert()
+    end
+end
+-- ==============================================
+-- VERITY ENHANCED | PART 3/4
+-- List UI, Main GUI & Tab System
+-- ==============================================
+
+-- UPDATE LIST UI
+function UpdateListUI()
+    if not ListFrame then return end
+    for _,btn in ipairs(ListButtons) do btn:Destroy() end ListButtons = {}
+    local y = 5
+
+    -- TEAM SECTION
+    local tLabel = Instance.new("TextLabel", ListFrame)
+    tLabel.Size = UDim2.new(0.96,0,0,22); tLabel.Position = UDim2.new(0.02,0,0,y)
+    tLabel.BackgroundColor3 = Color3.new(0.15,0.15,0.15); tLabel.Text = "TEAM"
+    tLabel.TextColor3 = Color3.new(1,1,1); tLabel.Font = Enum.Font.GothamBold; tLabel.TextSize = 12
+    table.insert(ListButtons, tLabel); y += 26
+
+    for _,plr in ipairs(Settings.Team) do
+        if not plr:IsDescendantOf(Players) then
+            local entry = Instance.new("TextLabel", ListFrame)
+            entry.Size = UDim2.new(0.8,0,0,28); entry.Position = UDim2.new(0.02,0,0,y)
+            entry.BackgroundTransparency = 0.9; entry.BackgroundColor3 = Color3.new(0.2,0.2,0.2)
+            entry.Text = plr.DisplayName.." | Left"
+            entry.TextColor3 = Color3.new(0.5,0.5,0.5)
+            entry.Font = Enum.Font.GothamSemibold; entry.TextSize = 11
+            table.insert(ListButtons, entry)
+            local removeBtn = Instance.new("TextButton", ListFrame)
+            removeBtn.Size = UDim2.new(0.14,0,0,28); removeBtn.Position = UDim2.new(0.84,0,0,y)
+            removeBtn.BackgroundColor3 = Color3.new(0.25,0.25,0.25); removeBtn.Text = "X"; removeBtn.TextColor3 = Color3.new(1,1,1)
+            removeBtn.Font = Enum.Font.GothamBold; removeBtn.TextSize = 12
+            removeBtn.MouseButton1Click:Connect(function() RemoveTeam(plr) end)
+            table.insert(ListButtons, removeBtn); y += 32
+            continue
+        end
+        local hum = plr.Character and plr.Character:FindFirstChildOfClass("Humanoid")
+        local hp = hum and hum.Health > 0 and (math.floor(hum.Health).." HP") or "Offline"
+        local entry = Instance.new("TextLabel", ListFrame)
+        entry.Size = UDim2.new(0.8,0,0,28); entry.Position = UDim2.new(0.02,0,0,y)
+        entry.BackgroundTransparency = 0.9; entry.BackgroundColor3 = Color3.new(0.2,0.2,0.2)
+        entry.Text = plr.DisplayName.." | "..hp
+        entry.TextColor3 = hp == "Offline" and Color3.new(0.5,0.5,0.5) or Color3.new(1,1,1)
+        entry.Font = Enum.Font.GothamSemibold; entry.TextSize = 11
+        table.insert(ListButtons, entry)
+        local removeBtn = Instance.new("TextButton", ListFrame)
+        removeBtn.Size = UDim2.new(0.14,0,0,28); removeBtn.Position = UDim2.new(0.84,0,0,y)
+        removeBtn.BackgroundColor3 = Color3.new(0.25,0.25,0.25); removeBtn.Text = "X"; removeBtn.TextColor3 = Color3.new(1,1,1)
+        removeBtn.Font = Enum.Font.GothamBold; removeBtn.TextSize = 12
+        removeBtn.MouseButton1Click:Connect(function() RemoveTeam(plr) end)
+        table.insert(ListButtons, removeBtn); y += 32
+    end
+
+    local div = Instance.new("Frame", ListFrame)
+    div.Size = UDim2.new(0.96,0,0,2); div.Position = UDim2.new(0.02,0,0,y)
+    div.BackgroundColor3 = Color3.new(0.4,0.4,0.4); div.BorderSizePixel = 0
+    table.insert(ListButtons, div); y += 8
+
+    -- ENEMY SECTION
+    local eLabel = Instance.new("TextLabel", ListFrame)
+    eLabel.Size = UDim2.new(0.96,0,0,22); eLabel.Position = UDim2.new(0.02,0,0,y)
+    eLabel.BackgroundColor3 = Color3.new(0.15,0.15,0.15); eLabel.Text = "ENEMIES"
+    eLabel.TextColor3 = Color3.new(1,1,1); eLabel.Font = Enum.Font.GothamBold; eLabel.TextSize = 12
+    table.insert(ListButtons, eLabel); y += 26
+
+    for _,plr in ipairs(Settings.Enemies) do
+        if not plr:IsDescendantOf(Players) then
+            local entry = Instance.new("TextLabel", ListFrame)
+            entry.Size = UDim2.new(0.8,0,0,28); entry.Position = UDim2.new(0.02,0,0,y)
+            entry.BackgroundTransparency = 0.9; entry.BackgroundColor3 = Color3.new(0.2,0.2,0.2)
+            entry.Text = plr.DisplayName.." | Left"
+            entry.TextColor3 = Color3.new(0.5,0.5,0.5)
+            entry.Font = Enum.Font.GothamSemibold; entry.TextSize = 11
+            table.insert(ListButtons, entry)
+            local removeBtn = Instance.new("TextButton", ListFrame)
+            removeBtn.Size = UDim2.new(0.14,0,0,28); removeBtn.Position = UDim2.new(0.84,0,0,y)
+            removeBtn.BackgroundColor3 = Color3.new(0.25,0.25,0.25); removeBtn.Text = "X"; removeBtn.TextColor3 = Color3.new(1,1,1)
+            removeBtn.Font = Enum.Font.GothamBold; removeBtn.TextSize = 12
+            removeBtn.MouseButton1Click:Connect(function() RemoveEnemy(plr) end)
+            table.insert(ListButtons, removeBtn); y += 32
+            continue
+        end
+        local hum = plr.Character and plr.Character:FindFirstChildOfClass("Humanoid")
+        local hp = hum and hum.Health > 0 and (math.floor(hum.Health).." HP") or "Offline"
+        local entry = Instance.new("TextLabel", ListFrame)
+        entry.Size = UDim2.new(0.8,0,0,28); entry.Position = UDim2.new(0.02,0,0,y)
+        entry.BackgroundTransparency = 0.9; entry.BackgroundColor3 = Color3.new(0.2,0.2,0.2)
+        entry.Text = plr.DisplayName.." | "..hp
+        entry.TextColor3 = hp == "Offline" and Color3.new(0.5,0.5,0.5) or Color3.new(1,1,1)
+        entry.Font = Enum.Font.GothamSemibold; entry.TextSize = 11
+        table.insert(ListButtons, entry)
+        local removeBtn = Instance.new("TextButton", ListFrame)
+        removeBtn.Size = UDim2.new(0.14,0,0,28); removeBtn.Position = UDim2.new(0.84,0,0,y)
+        removeBtn.BackgroundColor3 = Color3.new(0.25,0.25,0.25); removeBtn.Text = "X"; removeBtn.TextColor3 = Color3.new(1,1,1)
+        removeBtn.Font = Enum.Font.GothamBold; removeBtn.TextSize = 12
+        removeBtn.MouseButton1Click:Connect(function() RemoveEnemy(plr) end)
+        table.insert(ListButtons, removeBtn); y += 32
+    end
+end
+
+-- MAIN GUI
+local ScreenGui = Instance.new("ScreenGui", PlayerGui)
+ScreenGui.Name = "Verity_Enhanced"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+-- Mini Toggle
+local MiniBtn = Instance.new("TextButton", ScreenGui)
+MiniBtn.Size = UDim2.new(0, 44, 0, 44)
+MiniBtn.Position = UDim2.new(0.02, 0, 0.1, 0)
+MiniBtn.BackgroundColor3 = Color3.new(0.08, 0.08, 0.08)
+MiniBtn.BorderColor3 = Color3.new(0.25, 0.25, 0.25)
+MiniBtn.BorderSizePixel = 2
+MiniBtn.Text = "V"
+MiniBtn.Font = Enum.Font.GothamBlack
+MiniBtn.TextColor3 = Color3.new(1, 1, 1)
+MiniBtn.Visible = false
+Instance.new("UICorner", MiniBtn).CornerRadius = UDim.new(0.2, 0)
+
+-- Main Frame
+local MainFrame = Instance.new("Frame", ScreenGui)
+MainFrame.Size = UDim2.new(0, 380, 0, 740)
+MainFrame.Position = UDim2.new(0.02, 0, 0.1, 0)
+MainFrame.BackgroundColor3 = Color3.new(0.06, 0.06, 0.08)
+MainFrame.BorderColor3 = Color3.new(0.25, 0.25, 0.25)
+MainFrame.BorderSizePixel = 2
+MainFrame.Visible = true
+Instance.new("UICorner", MainFrame).CornerRadius = UDim.new(0.04, 0)
+
+-- Drag System
+local dragging, dragStart, startPos = false
+MainFrame.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        dragStart = input.Position
+        startPos = MainFrame.Position
+    end
+end)
+MainFrame.InputChanged:Connect(function(input)
+    if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+        MainFrame.Position = UDim2.new(
+            startPos.X.Scale, startPos.X.Offset + (input.Position.X - dragStart.X),
+            startPos.Y.Scale, startPos.Y.Offset + (input.Position.Y - dragStart.Y)
+        )
+    end
+end)
+UserInputService.InputEnded:Connect(function() dragging = false end)
+
+-- Title Bar
+local TitleBar = Instance.new("Frame", MainFrame)
+TitleBar.Size = UDim2.new(1, 0, 0, 48)
+TitleBar.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+TitleBar.BorderColor3 = Color3.new(0.25, 0.25, 0.25)
+TitleBar.BorderSizePixel = 1
+Instance.new("UICorner", TitleBar).CornerRadius = UDim.new(0.04, 0)
+
+local Logo = Instance.new("ImageLabel", TitleBar)
+Logo.Size = UDim2.new(0, 36, 0, 36)
+Logo.Position = UDim2.new(0, 8, 0, 6)
+Logo.BackgroundTransparency = 1
+Logo.Image = LogoID
+
+local TitleText = Instance.new("TextLabel", TitleBar)
+TitleText.Size = UDim2.new(1, -100, 1, 0)
+TitleText.Position = UDim2.new(0, 52, 0, 0)
+TitleText.BackgroundTransparency = 1
+TitleText.Text = "Verity Enhanced"
+TitleText.Font = Enum.Font.GothamBlack
+TitleText.TextColor3 = Color3.new(1, 1, 1)
+TitleText.TextSize = 18
+
+local MinBtn = Instance.new("TextButton", TitleBar)
+MinBtn.Size = UDim2.new(0, 30, 0, 30)
+MinBtn.Position = UDim2.new(1, -64, 0, 9)
+MinBtn.BackgroundColor3 = Color3.new(0.15, 0.15, 0.15)
+MinBtn.BorderColor3 = Color3.new(0.3, 0.3, 0.3)
+MinBtn.Text = "-"
+MinBtn.Font = Enum.Font.GothamBold
+MinBtn.TextColor3 = Color3.new(1, 1, 1)
+Instance.new("UICorner", MinBtn).CornerRadius = UDim.new(0.25, 0)
+
+local CloseBtn = Instance.new("TextButton", TitleBar)
+CloseBtn.Size = UDim2.new(0, 30, 0, 30)
+CloseBtn.Position = UDim2.new(1, -32, 0, 9)
+CloseBtn.BackgroundColor3 = Color3.new(0.15, 0.15, 0.15)
+CloseBtn.BorderColor3 = Color3.new(0.3, 0.3, 0.3)
+CloseBtn.Text = "X"
+CloseBtn.Font = Enum.Font.GothamBold
+CloseBtn.TextColor3 = Color3.new(1, 1, 1)
+Instance.new("UICorner", CloseBtn).CornerRadius = UDim.new(0.25, 0)
+
+-- Tab Container
+local TabContainer = Instance.new("Frame", MainFrame)
+TabContainer.Size = UDim2.new(0.92, 0, 0, 36)
+TabContainer.Position = UDim2.new(0.04, 0, 0, 56)
+TabContainer.BackgroundColor3 = Color3.new(0.08, 0.08, 0.08)
+TabContainer.BorderColor3 = Color3.new(0.2, 0.2, 0.2)
+Instance.new("UICorner", TabContainer).CornerRadius = UDim.new(0.2, 0)
+
+local TabAim = Instance.new("TextButton", TabContainer)
+TabAim.Size = UDim2.new(0.49, -2, 0, 32)
+TabAim.Position = UDim2.new(0.01, 0, 0.05, 0)
+TabAim.BackgroundColor3 = Color3.new(0.18, 0.18, 0.18)
+TabAim.Text = "Aim"
+TabAim.Font = Enum.Font.GothamBold
+TabAim.TextColor3 = Color3.new(1, 1, 1)
+Instance.new("UICorner", TabAim).CornerRadius = UDim.new(0.2, 0)
+
+local TabMisc = Instance.new("TextButton", TabContainer)
+TabMisc.Size = UDim2.new(0.49, -2, 0, 32)
+TabMisc.Position = UDim2.new(0.505, 0, 0.05, 0)
+TabMisc.BackgroundColor3 = Color3.new(0.12, 0.12, 0.12)
+TabMisc.Text = "Features"
+TabMisc.Font = Enum.Font.GothamBold
+TabMisc.TextColor3 = Color3.new(0.7, 0.7, 0.7)
+Instance.new("UICorner", TabMisc).CornerRadius = UDim.new(0.2, 0)
+
+-- Content Frames
+local AimFrame = Instance.new("Frame", MainFrame)
+AimFrame.Size = UDim2.new(0.92, 0, 0, 220)
+AimFrame.Position = UDim2.new(0.04, 0, 0, 100)
+AimFrame.BackgroundColor3 = Color3.new(0.07, 0.07, 0.07)
+AimFrame.BorderColor3 = Color3.new(0.2, 0.2, 0.2)
+Instance.new("UICorner", AimFrame).CornerRadius = UDim.new(0.06, 0)
+
+local MiscFrame = Instance.new("Frame", MainFrame)
+MiscFrame.Size = UDim2.new(0.92, 0, 0, 220)
+MiscFrame.Position = UDim2.new(0.04, 0, 0, 100)
+MiscFrame.BackgroundColor3 = Color3.new(0.07, 0.07, 0.07)
+MiscFrame.BorderColor3 = Color3.new(0.2, 0.2, 0.2)
+MiscFrame.Visible = false
+Instance.new("UICorner", MiscFrame).CornerRadius = UDim.new(0.06, 0)
+
+-- Tab Switch
+TabAim.MouseButton1Click:Connect(function()
+    AimFrame.Visible = true; MiscFrame.Visible = false
+    TabAim.BackgroundColor3 = Color3.new(0.22,0.22,0.22)
+    TabAim.TextColor3 = Color3.new(1,1,1)
+    TabMisc.BackgroundColor3 = Color3.new(0.12,0.12,0.12)
+    TabMisc.TextColor3 = Color3.new(0.7,0.7,0.7)
+end)
+
+TabMisc.MouseButton1Click:Connect(function()
+    AimFrame.Visible = false; MiscFrame.Visible = true
+    TabMisc.BackgroundColor3 = Color3.new(0.22,0.22,0.22)
+    TabMisc.TextColor3 = Color3.new(1,1,1)
+    TabAim.BackgroundColor3 = Color3.new(0.12,0.12,0.12)
+    TabAim.TextColor3 = Color3.new(0.7,0.7,0.7)
+end)
+-- ==============================================
+-- VERITY ENHANCED | PART 4/4
+-- Controls, Events, Main Loop & Finalization
+-- ==============================================
+
+-- AIM TAB CONTROLS
+local AimlockToggle = Instance.new("TextButton", AimFrame)
+AimlockToggle.Size = UDim2.new(0.9, 0, 0, 32)
+AimlockToggle.Position = UDim2.new(0.05, 0, 0.05, 0)
+AimlockToggle.BackgroundColor3 = Color3.new(0.15, 0.15, 0.15)
+AimlockToggle.Text = "Aimlock: OFF"
+AimlockToggle.Font = Enum.Font.GothamSemibold
+AimlockToggle.TextColor3 = Color3.new(1, 1, 1)
+Instance.new("UICorner", AimlockToggle).CornerRadius = UDim.new(0.18, 0)
+
+local SpeedLabel = Instance.new("TextLabel", AimFrame)
+SpeedLabel.Size = UDim2.new(0.6, 0, 0, 28)
+SpeedLabel.Position = UDim2.new(0.05, 0, 0.22, 0)
+SpeedLabel.BackgroundTransparency = 1
+SpeedLabel.Text = "Lock Speed: 1.00"
+SpeedLabel.Font = Enum.Font.GothamSemibold
+SpeedLabel.TextColor3 = Color3.new(0.9, 0.9, 0.9)
+SpeedLabel.TextSize = 12
+
+local SpeedMinus = Instance.new("TextButton", AimFrame)
+SpeedMinus.Size = UDim2.new(0.15, 0, 0, 28)
+SpeedMinus.Position = UDim2.new(0.68, 0, 0.22, 0)
+SpeedMinus.BackgroundColor3 = Color3.new(0.18, 0.18, 0.18)
+SpeedMinus.Text = "-"
+SpeedMinus.Font = Enum.Font.GothamBold
+SpeedMinus.TextColor3 = Color3.new(1, 1, 1)
+Instance.new("UICorner", SpeedMinus).CornerRadius = UDim.new(0.2, 0)
+
+local SpeedPlus = Instance.new("TextButton", AimFrame)
+SpeedPlus.Size = UDim2.new(0.15, 0, 0, 28)
+SpeedPlus.Position = UDim2.new(0.84, 0, 0.22, 0)
+SpeedPlus.BackgroundColor3 = Color3.new(0.18, 0.18, 0.18)
+SpeedPlus.Text = "+"
+SpeedPlus.Font = Enum.Font.GothamBold
+SpeedPlus.TextColor3 = Color3.new(1, 1, 1)
+Instance.new("UICorner", SpeedPlus).CornerRadius = UDim.new(0.2, 0)
+
+local OffsetLabel = Instance.new("TextLabel", AimFrame)
+OffsetLabel.Size = UDim2.new(0.6, 0, 0, 28)
+OffsetLabel.Position = UDim2.new(0.05, 0, 0.40, 0)
+OffsetLabel.BackgroundTransparency = 1
+OffsetLabel.Text = "Aim Offset: 0.15"
+OffsetLabel.Font = Enum.Font.GothamSemibold
+OffsetLabel.TextColor3 = Color3.new(0.9, 0.9, 0.9)
+OffsetLabel.TextSize = 12
+
+local OffsetMinus = Instance.new("TextButton", AimFrame)
+OffsetMinus.Size = UDim2.new(0.15, 0, 0, 28)
+OffsetMinus.Position = UDim2.new(0.68, 0, 0.40, 0)
+OffsetMinus.BackgroundColor3 = Color3.new(0.18, 0.18, 0.18)
+OffsetMinus.Text = "-"
+OffsetMinus.Font = Enum.Font.GothamBold
+OffsetMinus.TextColor3 = Color3.new(1, 1, 1)
+Instance.new("UICorner", OffsetMinus).CornerRadius = UDim.new(0.2, 0)
+
+local OffsetPlus = Instance.new("TextButton", AimFrame)
+OffsetPlus.Size = UDim2.new(0.15, 0, 0, 28)
+OffsetPlus.Position = UDim2.new(0.84, 0, 0.40, 0)
+OffsetPlus.BackgroundColor3 = Color3.new(0.18, 0.18, 0.18)
+OffsetPlus.Text = "+"
+OffsetPlus.Font = Enum.Font.GothamBold
+OffsetPlus.TextColor3 = Color3.new(1, 1, 1)
+Instance.new("UICorner", OffsetPlus).CornerRadius = UDim.new(0.2, 0)
+
+local PredLabel = Instance.new("TextLabel", AimFrame)
+PredLabel.Size = UDim2.new(0.6, 0, 0, 28)
+PredLabel.Position = UDim2.new(0.05, 0, 0.58, 0)
+PredLabel.BackgroundTransparency = 1
+PredLabel.Text = "Prediction: 0.08"
+PredLabel.Font = Enum.Font.GothamSemibold
+PredLabel.TextColor3 = Color3.new(0.9, 0.9, 0.9)
+PredLabel.TextSize = 12
+
+local PredMinus = Instance.new("TextButton", AimFrame)
+PredMinus.Size = UDim2.new(0.15, 0, 0, 28)
+PredMinus.Position = UDim2.new(0.68, 0, 0.58, 0)
+PredMinus.BackgroundColor3 = Color3.new(0.18, 0.18, 0.18)
+PredMinus.Text = "-"
+PredMinus.Font = Enum.Font.GothamBold
+PredMinus.TextColor3 = Color3.new(1, 1, 1)
+Instance.new("UICorner", PredMinus).CornerRadius = UDim.new(0.2, 0)
+
+local PredPlus = Instance.new("TextButton", AimFrame)
+PredPlus.Size = UDim2.new(0.15, 0, 0, 28)
+PredPlus.Position = UDim2.new(0.84, 0, 0.58, 0)
+PredPlus.BackgroundColor3 = Color3.new(0.18, 0.18, 0.18)
+PredPlus.Text = "+"
+PredPlus.Font = Enum.Font.GothamBold
+PredPlus.TextColor3 = Color3.new(1, 1, 1)
+Instance.new("UICorner", PredPlus).CornerRadius = UDim.new(0.2, 0)
+
+-- FEATURES TAB CONTROLS
+local ESPToggle = Instance.new("TextButton", MiscFrame)
+ESPToggle.Size = UDim2.new(0.9, 0, 0, 30)
+ESPToggle.Position = UDim2.new(0.05, 0, 0.05, 0)
+ESPToggle.BackgroundColor3 = Color3.new(0.15, 0.15, 0.15)
+ESPToggle.Text = "ESP & Tracers: ON"
+ESPToggle.Font = Enum.Font.GothamSemibold
+ESPToggle.TextColor3 = Color3.new(1, 1, 1)
+Instance.new("UICorner", ESPToggle).CornerRadius = UDim.new(0.18, 0)
+
+local TeamWarningToggle = Instance.new("TextButton", MiscFrame)
+TeamWarningToggle.Size = UDim2.new(0.9, 0, 0, 30)
+TeamWarningToggle.Position = UDim2.new(0.05, 0, 0.22, 0)
+TeamWarningToggle.BackgroundColor3 = Color3.new(0.15, 0.15, 0.15)
+TeamWarningToggle.Text = "Team HP Warning: ON"
+TeamWarningToggle.Font = Enum.Font.GothamSemibold
+TeamWarningToggle.TextColor3 = Color3.new(1, 1, 1)
+Instance.new("UICorner", TeamWarningToggle).CornerRadius = UDim.new(0.18, 0)
+
+-- PLAYER MANAGEMENT
+local InputBox = Instance.new("TextBox", MainFrame)
+InputBox.Size = UDim2.new(0.92, 0, 0, 34)
+InputBox.Position = UDim2.new(0.04, 0, 0, 330)
+InputBox.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+InputBox.BorderColor3 = Color3.new(0.25, 0.25, 0.25)
+InputBox.PlaceholderText = "Enter Username/Display Name"
+InputBox.TextColor3 = Color3.new(1, 1, 1)
+InputBox.Font = Enum.Font.GothamSemibold
+InputBox.TextSize = 13
+Instance.new("UICorner", InputBox).CornerRadius = UDim.new(0.2, 0)
+
+local AddTeamBtn = Instance.new("TextButton", MainFrame)
+AddTeamBtn.Size = UDim2.new(0.44, 0, 0, 32)
+AddTeamBtn.Position = UDim2.new(0.04, 0, 0, 370)
+AddTeamBtn.BackgroundColor3 = Color3.new(0.15, 0.15, 0.15)
+AddTeamBtn.Text = "Add Team"
+AddTeamBtn.TextColor3 = Color3.new(1, 1, 1)
+AddTeamBtn.Font = Enum.Font.GothamBold
+Instance.new("UICorner", AddTeamBtn).CornerRadius = UDim.new(0.18, 0)
+
+local AddEnemyBtn = Instance.new("TextButton", MainFrame)
+AddEnemyBtn.Size = UDim2.new(0.44, 0, 0, 32)
+AddEnemyBtn.Position = UDim2.new(0.52, 0, 0, 370)
+AddEnemyBtn.BackgroundColor3 = Color3.new(0.15, 0.15, 0.15)
+AddEnemyBtn.Text = "Add Enemy"
+AddEnemyBtn.TextColor3 = Color3.new(1, 1, 1)
+AddEnemyBtn.Font = Enum.Font.GothamBold
+Instance.new("UICorner", AddEnemyBtn).CornerRadius = UDim.new(0.18, 0)
+
+local AddAllBtn = Instance.new("TextButton", MainFrame)
+AddAllBtn.Size = UDim2.new(0.92, 0, 0, 32)
+AddAllBtn.Position = UDim2.new(0.04, 0, 0, 408)
+AddAllBtn.BackgroundColor3 = Color3.new(0.15, 0.15, 0.15)
+AddAllBtn.Text = "Add All Others as Enemies"
+AddAllBtn.TextColor3 = Color3.new(1, 1, 1)
+AddAllBtn.Font = Enum.Font.GothamSemibold
+Instance.new("UICorner", AddAllBtn).CornerRadius = UDim.new(0.18, 0)
+
+-- Player List Frame
+ListFrame = Instance.new("Frame", MainFrame)
+ListFrame.Size = UDim2.new(0.92, 0, 0, 280)
+ListFrame.Position = UDim2.new(0.04, 0, 0, 448)
+ListFrame.BackgroundColor3 = Color3.new(0.06, 0.06, 0.08)
+ListFrame.BorderColor3 = Color3.new(0.2, 0.2, 0.2)
+Instance.new("UICorner", ListFrame).CornerRadius = UDim.new(0.06, 0)
+
+-- CONNECT TOGGLES & EVENTS
+MinBtn.MouseButton1Click:Connect(function()
+    MainFrame.Visible = false
+    MiniBtn.Visible = true
+end)
+MiniBtn.MouseButton1Click:Connect(function()
+    MainFrame.Visible = true
+    MiniBtn.Visible = false
+end)
+CloseBtn.MouseButton1Click:Connect(function()
+    ScreenGui:Destroy()
+    for _, tab in pairs(ESPStorage) do
+        for _, obj in pairs(tab) do
+            if typeof(obj) == "table" and obj.Remove then
+                obj:Remove()
+            end
+        end
+    end
+end)
+
+-- Aimlock Toggle
+AimlockToggle.MouseButton1Click:Connect(function()
+    Settings.AimlockEnabled = not Settings.AimlockEnabled
+    AimlockToggle.Text = "Aimlock: " .. (Settings.AimlockEnabled and "ON" or "OFF")
+    AimlockToggle.BackgroundColor3 = Settings.AimlockEnabled and Color3.new(0.2, 0.2, 0.2) or Color3.new(0.15, 0.15, 0.15)
+end)
+
+-- Speed Controls
+SpeedMinus.MouseButton1Click:Connect(function()
+    Settings.AimSpeed = math.max(0.2, Settings.AimSpeed - 0.05)
+    SpeedLabel.Text = "Lock Speed: " .. string.format("%.2f", Settings.AimSpeed)
+end)
+SpeedPlus.MouseButton1Click:Connect(function()
+    Settings.AimSpeed = math.min(1.0, Settings.AimSpeed + 0.05)
+    SpeedLabel.Text = "Lock Speed: " .. string.format("%.2f", Settings.AimSpeed)
+end)
+
+-- Offset Controls
+OffsetMinus.MouseButton1Click:Connect(function()
+    Settings.AimOffset = math.max(-0.5, Settings.AimOffset - 0.05)
+    OffsetLabel.Text = "Aim Offset: " .. string.format("%.2f", Settings.AimOffset)
+end)
+OffsetPlus.MouseButton1Click:Connect(function()
+    Settings.AimOffset = math.min(0.5, Settings.AimOffset + 0.05)
+    OffsetLabel.Text = "Aim Offset: " .. string.format("%.2f", Settings.AimOffset)
+end)
+
+-- Prediction Controls
+PredMinus.MouseButton1Click:Connect(function()
+    Settings.Prediction = math.max(0, Settings.Prediction - 0.01)
+    PredLabel.Text = "Prediction: " .. string.format("%.2f", Settings.Prediction)
+end)
+PredPlus.MouseButton1Click:Connect(function()
+    Settings.Prediction = math.min(0.3, Settings.Prediction + 0.01)
+    PredLabel.Text = "Prediction: " .. string.format("%.2f", Settings.Prediction)
+end)
+
+-- ESP Toggle
+ESPToggle.MouseButton1Click:Connect(function()
+    Settings.ESPEnabled = not Settings.ESPEnabled
+    Settings.TracerEnabled = Settings.ESPEnabled
+    ESPToggle.Text = "ESP & Tracers: " .. (Settings.ESPEnabled and "ON" or "OFF")
+    ESPToggle.BackgroundColor3 = Settings.ESPEnabled and Color3.new(0.2, 0.2, 0.2) or Color3.new(0.15, 0.15, 0.15)
+end)
+
+-- Team Warning Toggle
+TeamWarningToggle.MouseButton1Click:Connect(function()
+    Settings.TeamWarningEnabled = not Settings.TeamWarningEnabled
+    TeamWarningToggle.Text = "Team HP Warning: " .. (Settings.TeamWarningEnabled and "ON" or "OFF")
+    TeamWarningToggle.BackgroundColor3 = Settings.TeamWarningEnabled and Color3.new(0.2, 0.2, 0.2) or Color3.new(0.15, 0.15, 0.15)
+end)
+
+-- Input & Add Buttons
+InputBox.FocusLost:Connect(function(enterPressed)
+    if enterPressed then
+        local found = SmartFindPlayer(InputBox.Text)
+        if found then
+            AddEnemy(found)
+        else
+            Notify("Player not found", 2)
+        end
+        InputBox.Text = ""
+    end
+end)
+AddTeamBtn.MouseButton1Click:Connect(function()
+    local found = SmartFindPlayer(InputBox.Text)
+    if found then AddTeam(found) end
+end)
+AddEnemyBtn.MouseButton1Click:Connect(function()
+    local found = SmartFindPlayer(InputBox.Text)
+    if found then AddEnemy(found) end
+end)
+AddAllBtn.MouseButton1Click:Connect(AddAllEnemies)
+
+-- --------------------------
+-- RESPAWN HANDLING
+-- --------------------------
+LocalPlayer.CharacterAdded:Connect(function(newChar)
+    Character = newChar
+    Humanoid = newChar:WaitForChild("Humanoid", 10)
+    CurrentTargetChar = nil
+    CurrentAimPart = nil
+end)
+
+-- --------------------------
+-- MAIN LOOP
+-- --------------------------
+RunService.RenderStepped:Connect(function(deltaTime)
+    -- Aimlock
+    local target = GetBestTarget()
+    if target and CurrentAimPart then
+        local aimPos = GetAimPos(CurrentAimPart)
+        if aimPos then
+            Camera.CFrame = Camera.CFrame:Lerp(CFrame.new(Camera.CFrame.Position, aimPos), Settings.AimSpeed)
+        end
+    end
+
+    -- Update ESP
+    UpdateESP()
+end)
+
+-- Refresh Player List
+task.spawn(function()
+    while task.wait(2) do
+        UpdateListUI()
+    end
+end)
+
+-- Final Load Message
+Notify("Verity Enhanced | Loaded Successfully", 4)
